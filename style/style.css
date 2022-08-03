@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* STYLE NAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+.nav__ {
+  background-color: rgb(5, 5, 5);
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+  align-items: center;
+}
+.nav__h1__img {
+  height: 7vh;
+  padding-left: 2vw;
+}
+.nav__ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.nav__ul__li {
+  font-family: "Finlandica", sans-serif;
+  font-size: 2vw;
+  padding: 0 1vw;
+}
+.nav__li__a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+.header__h3 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 4.5rem;
+  padding-bottom: 5vh;
+  color: rgb(245, 245, 245);
+  opacity: 0.85;
+}
+.background__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/portada.png);
+  height: 90%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* STYLE MAIN BIENVENIDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+#bienvenida {
+  text-align: center;
+  padding: 5vh 20vw;
+}
+.bienvenida__h2 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 2.2vw;
+  padding-bottom: 4vh;
+  color: rgb(35, 165, 217);
+  text-align: center;
+}
+.bienvenida__p {
+  font-family: "Finlandica", sans-serif;
+  text-align: center;
+  font-size: 1.3vw;
+  line-height: 1.4;
+}
+/* STYLE FOTOS DE INICIO */
+#bienvefotos {
+  display: flex;
+  max-width: 100%;
+}
+.bienvefotos__div {
+  width: 25%;
+}
+.bienvefotos__img {
+  width: 100%;
+  height: 100%;
+}
+/*PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+#productos {
+  display: grid;
+  height: 80%;
+  width: 90%;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "img nombre" "img descripcion";
+  margin: 10vh auto;
+  background-color: rgba(35, 165, 217, 0.795);
+  border-radius: 25px;
+}
+.productos__h2 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.7rem;
+  color: rgb(35, 165, 217);
+  text-align: center;
+  margin: 7vh 0 red;
+}
+.productos__h3 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 2rem;
+}
+.productos__h4 {
+  padding-bottom: 5vh;
+}
+.productos__p {
+  padding-bottom: 5vh;
+}
+.section__div__img {
+  grid-area: img;
+  height: 80%;
+  justify-self: end;
+  align-self: center;
+}
+.productos__img {
+  height: 100%;
+  border-radius: 10px;
+}
+.section__div__h3 {
+  grid-area: nombre;
+  justify-self: center;
+  align-self: center;
+}
+.section__div__p {
+  grid-area: descripcion;
+  justify-self: center;
+  align-self: start;
+  margin-bottom: 5%;
+}
+
+/*SERVICIOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+#servicios {
+  background-image: url(../imagenes/fondo-servicios.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.servicios__h2 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 2.2rem;
+  padding-bottom: 4vh;
+  color: rgb(252, 252, 252);
+  padding-top: 2.7%;
+  text-align: center;
+}
+.div__conteiner__logos {
+  display: flex;
+  text-align: center;
+  margin: 0 12%;
+}
+.servicios__h3 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 3vh;
+  color: rgb(252, 252, 252);
+}
+.div__img {
+  padding: 10% 0;
+}
+.servicios__img {
+  width: 40%;
+  padding: 10%;
+  background-color: rgba(35, 165, 217, 0.795);
+  border-radius: 10px;
+}
+.h3__servicios {
+  text-align: center;
+}
+.servicios__p {
+  font-size: 1rem;
+  padding-top: 3vh;
+  color: rgb(252, 252, 252);
+  margin: 0 10%;
+}
+/* LA EMPRESA STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+.empresa--conteiner {
+  display: flex;
+  margin: 4% 5%;
+}
+.div__img__conteiner {
+  display: flex;
+  justify-content: end;
+  height: 90vh;
+}
+.empresa--h2 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10%;
+  color: rgb(35, 165, 217);
+}
+.empresa--h3 {
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+.empresa--conteiner__presentacion {
+  margin-right: 10%;
+}
+.empresa--p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10%;
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+/* Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+.footer {
+  margin-top: 10%;
+  display: grid;
+  height: 30vh;
+  width: 100%;
+  background-color: black;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    "img img img"
+    "telefonos redes consulta"
+    "copy copy copy";
+  justify-items: center;
+}
+.footer__div__img {
+  grid-area: img;
+  margin-top: 1.5%;
+}
+.footer__telefonos {
+  grid-area: telefonos;
+  font-size: 1vw;
+  color: aliceblue;
+}
+.footer__h2 {
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 2vh;
+}
+.footer__redes {
+  grid-area: redes;
+  font-size: 1vw;
+  color: aliceblue;
+}
+.footer__ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.footer__li {
+  width: 2.5vw;
+  height: 3.5vh;
+}
+.footer__logos {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.footer__consulta {
+  grid-area: consulta;
+  font-size: 1vw;
+  color: aliceblue;
+}
+.footer__copy {
+  grid-area: copy;
+  color: rgb(0, 5, 8);
+  background-color: white;
+  justify-self: start;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: start;
+}
+/* FINAL INDEX */
+
+/* PRODUCTOS.HTMLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
+.main--productos {
+  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
+}
+.productos--h4 {
+ text-align: start;
+  padding-top: 3vh;
+  padding-left: 65%;
+  font-family: "Finlandica", sans-serif;
+  font-size: 2.2vw;
+}
+.productos--h4--p2{
+  text-align: start;
+  padding-top: 3vh;
+  padding-left: 65%;
+  font-family: "Finlandica", sans-serif;
+  font-size: 2.2vw;
+}
+#termicos,
+#fiscales,
+#obra,
+#etiquetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 70%;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: solid 3px rgba(120, 133, 252, 0.37);
+  grid-template-areas:
+    "img descripcion"
+    "img medidas"
+    "img link";
+}
+.productos--h3 {
+  text-align: center;
+  font-family: "Finlandica", sans-serif;
+  font-size: 2rem;
+  padding: 4vh;
+  color: rgb(35, 165, 217);
+}
+.productos--div {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+  height: 90%;
+  width: auto;
+}
+.productos--descripcion__tf {
+  grid-area: descripcion;
+  font-family: "Finlandica", sans-serif;
+  font-size: 1.2rem;
+  place-self: center start;
+}
+.productos--medidas{
+  grid-area: medidas;
+  place-self: center start;
+  font-size: 1.2rem;
+  font-family: "Finlandica", sans-serif;
+}
+.productos--link{
+  grid-area: link;
+  place-self: center;
+  /* padding: 20px; */
+  /* height: 50px;
+  width: 200px; */
+  background-color: green;
+  border-radius: 20px;
+  text-align: center;
+}
+.productos--solicitar {
+  color: white;
+  text-decoration: none;
+  font-family: "Finlandica", sans-serif;
+}
+.solicitar--span {
+  font-size: 1rem;
+  padding: 15px 40px;
+  background-color: green;
+  border-radius: 20px;
+}
+.productos--img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.productos--lis {
+  padding: 2% 0;
+}
+
+/* grids guia */
+.grid-body {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  border: solid 3px red;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "sectiona sectionb aside"
+    "footer footer footer";
+}
+.grid-header {
+  grid-area: header;
+  background-color: aliceblue;
+}
+.grid-sectiona {
+  grid-area: sectiona;
+  background-color: blueviolet;
+}
+.grid-sectionb {
+  grid-area: sectionb;
+  background-color: chartreuse;
+}
+.grid-aside {
+  grid-area: aside;
+  background-color: yellow;
+}
+.grid-footer {
+  grid-area: footer;
+  background-color: black;
+}
+/* MEDIA QUERRIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES */
+
+@media screen and (max-width: 830px) {
+  .header__h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  #productos {
+    background-color: rgb(35, 165, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  .productos__h2 {
+    font-size: 1.1rem;
+    margin-top: 5vh 0 0 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .productos__h4,
+  .productos__div__lis {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__h3 {
+    order: -10;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__img {
+    height: 65%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__p {
+    margin-bottom: 0;
+    text-align: center;
+    place-self: center;
+  }
+}
+/* MEDIA SERVICIOS */
+@media screen and (max-width: 830px) {
+  #servicios {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .div__conteiner__logos {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .div__conteiner__logos {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+/* MOBILE BIENVENIDA */
+@media screen and (max-width: 830px) {
+  #bienvenida {
+    padding: 5vh 3vw;
+  }
+}
+@media screen and (max-width: 830px) {
+  .bienvenida__h2 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .bienvenida__p {
+    font-size: 0.8rem;
+  }
+}
+
+/* footer mobile */
+@media screen and (max-width: 830px) {
+  .footer__h2 {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__telefonos,
+  .footer__consulta,
+  .footer__redes {
+    padding: 1vh 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .telefonos__p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__li {
+    width: 25px;
+    height: 30px;
+    padding: 0 1vw;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__div__img {
+    margin-top: 3vh;
+  }
+}
+/* EMPRESA MOBILE */
+@media screen and (max-width: 830px) {
+  .div__img__conteiner {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .empresa--conteiner {
+    margin: 2% 2% 5% 2%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .empresa--conteiner__presentacion {
+    margin: 0;
+  }
+}
+/* PRODUCTOS MOBILE */
+@media screen and (max-width: 830px) {
+  #termicos,
+  #fiscales,
+  #obra,
+  #etiquetas {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    border-bottom: solid 3px rgba(120, 133, 252, 0.37);
+  }
+}
+@media screen and (max-width: 830px) {
+  .productos--h4 {
+    order: -10;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5vh 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .productos--h5,
+  .productos--lis,
+  .productos--descripcion--p {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .productos--div {
+    width: 70%;
+    height: auto;
+  }
+}
