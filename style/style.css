@@ -6,32 +6,40 @@
 /* STYLE NAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
 .nav__ {
   background-color: rgb(5, 5, 5);
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-  align-items: center;
 }
-.nav__h1__img {
-  height: 7vh;
-  padding-left: 2vw;
+.nav__h1 {
+  height: 50px;
+  margin-bottom: 0;
 }
-.nav__ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  flex-wrap: nowrap;
+.nav__h1:hover {
+  height: 51px;
 }
-.nav__ul__li {
-  font-family: "Finlandica", sans-serif;
-  font-size: 2vw;
-  padding: 0 1vw;
+.h1__img {
+  padding-left: 15px;
+  width: 100%;
+  height: 100%;
 }
-.nav__li__a {
-  color: rgb(245, 245, 245);
-  text-decoration: none;
+.nav__contenedor__a {
+  justify-content: end;
+}
+.nav-item {
+  padding: 0 2px;
+}
+#navlink {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+}
+#navlink:hover {
+  color: rgb(35, 165, 217);
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+.navbar-toggler {
+  background-color: white;
 }
 .header__h3 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 4.5rem;
   padding-bottom: 5vh;
   color: rgb(245, 245, 245);
@@ -53,14 +61,15 @@
   padding: 5vh 20vw;
 }
 .bienvenida__h2 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.2vw;
   padding-bottom: 4vh;
   color: rgb(35, 165, 217);
   text-align: center;
 }
 .bienvenida__p {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+
   text-align: center;
   font-size: 1.3vw;
   line-height: 1.4;
@@ -78,56 +87,65 @@
   height: 100%;
 }
 /*PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-#productos {
-  display: grid;
-  height: 80%;
-  width: 90%;
-  grid-template-columns: 3fr 4fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas: "img nombre" "img descripcion";
-  margin: 10vh auto;
-  background-color: rgba(35, 165, 217, 0.795);
-  border-radius: 25px;
+.productos__index__div__img {
+  height: 400px;
+  text-align: end;
+}
+.productos__div__img {
+  height: 100%;
+  border-radius: 10px;
+}
+.container__productos {
+  width: 70vw;
+  margin: 2rem auto;
+}
+.productos__row {
+  background-color: rgb(35, 165, 217);
+  border-radius: 30px;
+}
+.div__descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carrusel__contenedor {
+  margin: 1.5rem 0 3rem 0;
+}
+.carrusel__bottom {
+  background-color: rgb(124, 124, 124);
+  opacity: 0.7;
+  border-radius: 20px;
+  padding: 1.35rem;
+}
+.productos__div__medidas {
+  color: rgb(245, 245, 245);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+}
+.productos__p {
+  color: rgb(245, 245, 245);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+.productos__div__solicitar {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
 }
 .productos__h2 {
-  font-family: "Finlandica", sans-serif;
-  font-size: 1.7rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
   color: rgb(35, 165, 217);
   text-align: center;
-  margin: 7vh 0 red;
+  margin: 2rem 0 0 0;
 }
 .productos__h3 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2rem;
 }
 .productos__h4 {
   padding-bottom: 5vh;
 }
-.productos__p {
-  padding-bottom: 5vh;
-}
-.section__div__img {
-  grid-area: img;
-  height: 80%;
-  justify-self: end;
-  align-self: center;
-}
-.productos__img {
-  height: 100%;
-  border-radius: 10px;
-}
-.section__div__h3 {
-  grid-area: nombre;
-  justify-self: center;
-  align-self: center;
-}
-.section__div__p {
-  grid-area: descripcion;
-  justify-self: center;
-  align-self: start;
-  margin-bottom: 5%;
-}
-
 /*SERVICIOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 #servicios {
   background-image: url(../imagenes/fondo-servicios.png);
@@ -137,9 +155,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 .servicios__h2 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.2rem;
   padding-bottom: 4vh;
   color: rgb(252, 252, 252);
@@ -152,13 +171,14 @@
   margin: 0 12%;
 }
 .servicios__h3 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
   padding-top: 3vh;
   color: rgb(252, 252, 252);
 }
 .div__img {
   padding: 10% 0;
+  font-family: none;
 }
 .servicios__img {
   width: 40%;
@@ -186,13 +206,13 @@
   height: 90vh;
 }
 .empresa--h2 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 10%;
   color: rgb(35, 165, 217);
 }
 .empresa--h3 {
-  font-family: "Finlandica", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1%;
 }
@@ -206,69 +226,73 @@
   line-height: 30px;
 }
 /* Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-.footer {
-  margin-top: 10%;
-  display: grid;
-  height: 30vh;
-  width: 100%;
+.footer__row {
   background-color: black;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr auto;
-  grid-template-areas:
-    "img img img"
-    "telefonos redes consulta"
-    "copy copy copy";
-  justify-items: center;
+  height: 250px;
 }
-.footer__div__img {
-  grid-area: img;
-  margin-top: 1.5%;
-}
-.footer__telefonos {
-  grid-area: telefonos;
-  font-size: 1vw;
-  color: aliceblue;
-}
-.footer__h2 {
+.foteer__div__img {
   text-align: center;
-  font-size: 1.5vw;
-  padding-bottom: 2vh;
 }
-.footer__redes {
-  grid-area: redes;
-  font-size: 1vw;
-  color: aliceblue;
-}
-.footer__ul {
+.div__telefonos {
   display: flex;
+  justify-content: center;
   list-style: none;
-  justify-content: space-around;
 }
-.footer__li {
-  width: 2.5vw;
-  height: 3.5vh;
+.footer__telefonos__a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
 }
-.footer__logos {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+.footer__telefonos__a:hover {
+font-size: 1.04rem;
 }
-.footer__consulta {
-  grid-area: consulta;
-  font-size: 1vw;
-  color: aliceblue;
+.telefonos__div__li {
+  border-right: solid 1px grey;
+  padding-right: 1rem;
+  opacity: 0.9;
+}
+.telefonos__div--li {
+  padding-left: 1rem;
+  opacity: 0.9;
+}
+.footer__h5 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.div__redes {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+.redes__li {
+  padding: 0 1rem;
+}
+.footer__div__formulario {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.footer__redes__img {
+  height: 30px;
+  width: 30px;
+}
+.footer__redes__img:hover {
+  height: 33px;
+  width: 33px;
+}
+.footer__formulario:hover {
+  background-color: rgb(35, 165, 217);
+font-size: 1.03rem;
+}
+.div__copy {
+  background-color:#ffffff;
 }
 .footer__copy {
-  grid-area: copy;
-  color: rgb(0, 5, 8);
-  background-color: white;
-  justify-self: start;
-  width: 100%;
-  height: 100%;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  text-align: start;
+ margin-bottom: 0;
+ color:black ;
 }
 /* FINAL INDEX */
 
@@ -277,13 +301,13 @@
   background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
 }
 .productos--h4 {
- text-align: start;
+  text-align: start;
   padding-top: 3vh;
   padding-left: 65%;
   font-family: "Finlandica", sans-serif;
   font-size: 2.2vw;
 }
-.productos--h4--p2{
+.productos--h4--p2 {
   text-align: start;
   padding-top: 3vh;
   padding-left: 65%;
@@ -326,18 +350,15 @@
   font-size: 1.2rem;
   place-self: center start;
 }
-.productos--medidas{
+.productos--medidas {
   grid-area: medidas;
   place-self: center start;
   font-size: 1.2rem;
   font-family: "Finlandica", sans-serif;
 }
-.productos--link{
+.productos--link {
   grid-area: link;
   place-self: center;
-  /* padding: 20px; */
-  /* height: 50px;
-  width: 200px; */
   background-color: green;
   border-radius: 20px;
   text-align: center;
