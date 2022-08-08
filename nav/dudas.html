@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg nav__">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <h1 class="nav__h1"><img class="h1__img" src="./imagenes/logo_rollmax.png" alt="Roll Max"></h1>
+                    <h1 class="nav__h1"><img class="h1__img" src="../imagenes/logo_rollmax.png" alt="Roll Max"></h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,25 +43,37 @@
             </div>
         </nav>
     </header>
-    <footer class="footer">
-        <div class="footer__div__img"><img class="footer__logo" src="../imagenes/logo.png" alt=""></div>
-        <div class="footer__telefonos">
-            <h2 class="footer__h2">Telefonos</h2>
-            <p>1157427535 | 1157427534</p>
+    <footer class="container-fluid">
+        <div class="row footer__row">
+            <div class="col-12 p-3">
+                <div class="foteer__div__img"><img src="../imagenes/logo.png" alt=""></div>
+            </div>
+            <div class="col-4 p-4">
+                <h5 class="footer__h5">TELEFONOS</h5>
+                <div class="div__telefonos">
+                    <li class="telefonos__div__li"><a class="footer__telefonos__a" href="">1157427535</a></li>
+                    <li class="telefonos__div--li"><a class="footer__telefonos__a" href="">1145457535</a></li>
+                </div>
+            </div>
+            <div class="col-4 p-4">
+                <h5 class="footer__h5">REDES</h5>
+                <div class="div__redes">
+                    <li class="redes__li"><a class="footer__redes__a" href=""><img class="footer__redes__img"
+                                src="../imagenes/instagram.png" alt=""></a></li>
+                    <li class="redes__li"><a class="footer__redes__a" href=""><img class="footer__redes__img"
+                                src="../imagenes/facebook.png" alt=""></a></li>
+                    <li class="redes__li"><a class="footer__redes__a" href=""><img class="footer__redes__img"
+                                src="../imagenes/gmail.png" alt=""></a></li>
+                </div>
+            </div>
+            <div class="col-4 p-4">
+                <h5 class="footer__h5">DEJANOS TU CONSULTA</h5>
+                <div class="footer__div__formulario">
+                    <button type="button" class="btn btn-light footer__formulario">FORMULARIO</button>
+                </div>
+            </div>
         </div>
-        <div class="footer__redes">
-            <h2 class="footer__h2">Redes</h2>
-            <ul class="footer__ul">
-                <li class="footer__li"><a href=""><img class="footer__logos" src="../imagenes/facebook.png" alt=""></a>
-                </li>
-                <li class="footer__li"><a href=""><img class="footer__logos" src="../imagenes/gmail.png" alt=""></a></li>
-                <li class="footer__li"><a href=""><img class="footer__logos" src="../imagenes/instagram.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__consulta">
-            <h2 class="footer__h2">Dejanos tu consulta haciendo click <br><a href="">ACA</a></h2>
-        </div>
-        <p class="footer__copy">&copy;Roll Max 2022| Todos los derechos reservados.</p>
     </footer>
+    <p class="footer__copy small">&copy;Roll Max 2022 | Todos los derechos reservados.</p>
+    <script src="./js/bootstrap.js"></script>
 </body>
