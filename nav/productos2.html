@@ -1,18 +1,17 @@
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title translate="no">Roll Max</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Ubuntu:wght@700&display=swap"
-            rel="stylesheet">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">Roll Max</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
 
 <body>
     <header>
@@ -31,13 +30,16 @@
                             <a class="nav-link active" id="navlink" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./productos.html">Productos</a>
+                            <a class="nav-link active" id="navlink" aria-current="page"
+                                href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./la-empresa.html">La empresa</a>
+                            <a class="nav-link active" id="navlink" aria-current="page" href="./la-empresa.html">La
+                                empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" id="navlink" aria-current="page"
+                                href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +48,60 @@
     </header>
     <main class="main--productos">
         <h3 class="productos--h3">PRODUCTOS</h3>
-        <h4 class="productos--h4">TERMICOS</h4>
+        <div class="container-fluid">
+            <div class="col-6">
+                <h4>Termicos</h4>
+            </div>
+            <div class="row p-4">
+                <div class="col-6">
+                    <div>aaaa<img src="" alt=""></div>
+                </div>
+                <div class="col-6">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    DESCRIPCION
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Rollos termicos origen brasil</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    MEDIDAS
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body"><div class="productos--medidas">
+                                    <li class="productos--lis">37mm x 30m / 50m
+                                    </li>
+                                    <li class="productos--lis">44mm x 30m / 50m
+                                    </li>
+                                    <li class="productos--lis">57mm x 10m / 20m / 30m / 40m / 50m
+                                    </li>
+                                    <li class="productos--lis">80mm x 30m / 40m / 50m / 60m / 70m / 80m
+                                    </li>
+                                </div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- <h4 class="productos--h4">TERMICOS</h4>
         <section id="termicos">
             <div class="productos--div"><img class="productos--img" src="../imagenes/termico.jpg" alt="Rollos termicos"
                     title="Rollos termicos">
@@ -136,7 +191,7 @@
             <div class="productos--link">
                 <a class="productos--solicitar" href=""><span class="solicitar--span">SOLICITAR</span></a>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="container-fluid">
         <div class="row footer__row">
@@ -169,10 +224,6 @@
             </div>
         </div>
     </footer>
-    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
-        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    <a href="./dudas.html" class="question"
-        target="_blank"> <img class="img__question" src="../imagenes/question.png" alt=""></a>
     <p class="footer__copy small">&copy;Roll Max 2022 | Todos los derechos reservados.</p>
     <script src="../js/bootstrap.js"></script>
 </body>
