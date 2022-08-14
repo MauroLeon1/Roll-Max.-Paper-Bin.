@@ -1,18 +1,18 @@
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title translate="no">Roll Max</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Ubuntu:wght@700&display=swap"
-            rel="stylesheet">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">Roll Max</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
 
 <body>
     <header>
@@ -31,13 +31,16 @@
                             <a class="nav-link active" id="navlink" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./productos.html">Productos</a>
+                            <a class="nav-link active" id="navlink" aria-current="page"
+                                href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./la-empresa.html">La empresa</a>
+                            <a class="nav-link active" id="navlink" aria-current="page" href="./la-empresa.html">La
+                                empresa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="navlink" aria-current="page" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" id="navlink" aria-current="page"
+                                href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -46,97 +49,230 @@
     </header>
     <main class="main--productos">
         <h3 class="productos--h3">PRODUCTOS</h3>
-        <h4 class="productos--h4">TERMICOS</h4>
-        <section id="termicos">
-            <div class="productos--div"><img class="productos--img" src="../imagenes/termico.jpg" alt="Rollos termicos"
-                    title="Rollos termicos">
+        <div class="container-fluid container-fluid-productos">
+            
+            <div class="col-md-5 col-xs-12">
+                <h4 class="productos__termicos__h4">TERMICOS</h4>
             </div>
-            <div class="productos--descripcion__tf">
-                <p class="productos--descripcion--p">Rollos papel termico blancos lisos. Origen Brasil /
-                    Corea.<br>Maxima
-                    calidad.</p>
+            <div class="row row__termicos">
+                <div class="col-md-6 p-4 col-xs-12 container__termico">
+                    <div class="col-md-10 col-xs-12 div__conteiner__img"><img class="termicos--img" src="../imagenes/termico.jpg" alt=""></div>
+                </div>
+           
+                <div class="col-md-6 p-4 col-xs-12 div__acordeon">
+                    <div class="accordion accordion-flush acordeon__container" id="panelsStayOpen-headingOne">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              - DESCRIPCION
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Rollos papel termico blancos lisos. <br> Origen Brasil /
+                                Corea.<br>Maxima
+                                calidad.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              - MEDIDAS
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><li>37mm x 30m / 50m
+                            </li>
+                            <li>44mm x 30m / 50m
+                            </li>
+                            <li>57mm x 10m / 20m / 30m / 40m / 50m
+                            </li>
+                            <li>80mm x 30m / 40m / 50m / 60m / 70m / 80m
+                            </li></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              - USOS FRECUENTES
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="productos__div__buttom"><button type="button" class="btn btn-success buttom__solicitar">SOLICITAR</button></div>
+                </div>
             </div>
-            <div class="productos--medidas">
-                <li class="productos--lis">37mm x 30m / 50m
-                </li>
-                <li class="productos--lis">44mm x 30m / 50m
-                </li>
-                <li class="productos--lis">57mm x 10m / 20m / 30m / 40m / 50m
-                </li>
-                <li class="productos--lis">80mm x 30m / 40m / 50m / 60m / 70m / 80m
-                </li>
+        </div>
+        <div class="container-fluid container-fluid-productos">
+            
+            <div class="col-md-5 col-xs-12">
+                <h4 class="productos__termicos__h4">OBRA</h4>
             </div>
-            <div class="productos--link">
-                <a class="productos--solicitar" href=""><span class="solicitar--span">SOLICITAR</span></a>
+            <div class="row row__termicos">
+                <div class="col-md-6 col-xs-12 p-4 container__termico">
+                    <div class="col-md-10 col-xs-12 div__conteiner__img"><img class="termicos--img" src="../imagenes/obra.jpeg" alt=""></div>
+                </div>
+           
+                <div class="col-md-6 p-4 col-xs-12 div__acordeon">
+                    <div class="accordion accordion-flush acordeon__container" id="panelsStayOpen-headingOne">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              - DESCRIPCION
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Rollos papel termico blancos lisos. <br> Origen Brasil /
+                                Corea.<br>Maxima
+                                calidad.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              - MEDIDAS
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><li>37mm x 30m / 50m
+                            </li>
+                            <li>44mm x 30m / 50m
+                            </li>
+                            <li>57mm x 10m / 20m / 30m / 40m / 50m
+                            </li>
+                            <li>80mm x 30m / 40m / 50m / 60m / 70m / 80m
+                            </li></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              - USOS FRECUENTES
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="productos__div__buttom"><button type="button" class="btn btn-success buttom__solicitar">SOLICITAR</button></div>
+                </div>
             </div>
-        </section>
-        <h4 class="productos--h4--p2">OBRA</h4>
-        <section id="obra">
-            <div class="productos--div"><img class="productos--img" src="../imagenes/obra.jpeg" alt="Rollos obra"
-                    title="Rollos obra"></div>
-            <div class="productos--descripcion__tf">
-                <p class="productos--descripcion--p">Rollos papel termico blancos lisos. Origen Brasil / Corea. Maxima
-                    calidad.</p>
+        </div>
+        <div class="container-fluid container-fluid-productos">
+            
+            <div class="col-md-5 col-xs-12">
+                <h4 class="productos__termicos__h4">FISCALES</h4>
             </div>
-            <div class="productos--medidas">
-                <li class="productos--lis">37mm x 30m / 50m
-                </li>
-                <li class="productos--lis">44mm x 30m / 50m
-                </li>
-                <li class="productos--lis">57mm x 10m / 20m / 30m / 40m / 50m
-                </li>
-                <li class="productos--lis">80mm x 30m / 40m / 50m / 60m / 70m / 80m
-                </li>
+            <div class="row row__termicos">
+                <div class="col-md-6 col-xs-12 p-4 container__termico">
+                    <div class="col-md-10 col-xs-12 div__conteiner__img"><img class="termicos--img" src="../imagenes/fiscales.jpeg" alt=""></div>
+                </div>
+           
+                <div class="col-md-6 col-xs-12 p-4 div__acordeon">
+                    <div class="accordion accordion-flush acordeon__container" id="panelsStayOpen-headingOne">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              - DESCRIPCION
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Rollos papel termico blancos lisos. <br> Origen Brasil /
+                                Corea.<br>Maxima
+                                calidad.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              - MEDIDAS
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><li>37mm x 30m / 50m
+                            </li>
+                            <li>44mm x 30m / 50m
+                            </li>
+                            <li>57mm x 10m / 20m / 30m / 40m / 50m
+                            </li>
+                            <li>80mm x 30m / 40m / 50m / 60m / 70m / 80m
+                            </li></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              - USOS FRECUENTES
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="productos__div__buttom"><button type="button" class="btn btn-success buttom__solicitar">SOLICITAR</button></div>
+                </div>
             </div>
-            <div class="productos--link">
-                <a class="productos--solicitar" href=""><span class="solicitar--span">SOLICITAR</span></a>
+        </div>
+        <div class="container-fluid container-fluid-productos">
+            
+            <div class="col-md-5 col-xs-12">
+                <h4 class="productos__termicos__h4">ETIQUETAS AUTOADHESIVAS</h4>
             </div>
-        </section>
-        <h4 class="productos--h4">FISCALES</h4>
-        <section id="fiscales">
-            <div class="productos--div"><img class="productos--img" src="../imagenes/fiscales.jpeg"
-                    alt="Rollos fiscales" title="Rollos fiscales"></div>
-            <div class="productos--descripcion__tf">
-                <p class="productos--descripcion--p">Rollos papel termico blancos lisos. Origen Brasil / Corea. Maxima
-                    calidad.</p>
+            <div class="row row__termicos">
+                <div class="col-md-6 col-xs-12 p-4 container__termico">
+                    <div class="col-md-10 col-xs-12 div__conteiner__img"><img class="termicos--img" src="../imagenes/etiquetas.jpeg" alt=""></div>
+                </div>
+           
+                <div class="col-md-6 col-xs-12 p-4 div__acordeon">
+                    <div class="accordion accordion-flush acordeon__container" id="panelsStayOpen-headingOne"">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              - DESCRIPCION
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Rollos papel termico blancos lisos. <br> Origen Brasil /
+                                Corea.<br>Maxima
+                                calidad.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              - MEDIDAS
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><li>37mm x 30m / 50m
+                            </li>
+                            <li>44mm x 30m / 50m
+                            </li>
+                            <li>57mm x 10m / 20m / 30m / 40m / 50m
+                            </li>
+                            <li>80mm x 30m / 40m / 50m / 60m / 70m / 80m
+                            </li></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed descripcion__acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              - USOS FRECUENTES
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="productos__div__buttom"><button type="button" class="btn btn-success buttom__solicitar">SOLICITAR</button></div>
+                </div>
             </div>
-            <div class="productos--medidas">
-                <li class="productos--lis">37mm x 30m / 50m
-                </li>
-                <li class="productos--lis">44mm x 30m / 50m
-                </li>
-                <li class="productos--lis">57mm x 10m / 20m / 30m / 40m / 50m
-                </li>
-                <li class="productos--lis">80mm x 30m / 40m / 50m / 60m / 70m / 80m
-                </li>
-            </div>
-            <div class="productos--link">
-                <a class="productos--solicitar" href=""><span class="solicitar--span">SOLICITAR</span></a>
-            </div>
-        </section>
-
-        <h4 class="productos--h4--p2">ETIQUETAS AUTOADHESIVAS</h4>
-        <section id="etiquetas">
-            <div class="productos--div"><img class="productos--img" src="../imagenes/etiquetas.jpeg"
-                    alt="Etiquetas autoadhesivas" title="Etiquetas autoadhesivas"></div>
-            <div class="productos--descripcion__tf">
-                <p class="productos--descripcion--p">Rollos papel termico blancos lisos. Origen Brasil / Corea. Maxima
-                    calidad.</p>
-            </div>
-            <div class="productos--medidas">
-                <li class="productos--lis">37mm x 30m / 50m
-                </li>
-                <li class="productos--lis">44mm x 30m / 50m
-                </li>
-                <li class="productos--lis">57mm x 10m / 20m / 30m / 40m / 50m
-                </li>
-                <li class="productos--lis">80mm x 30m / 40m / 50m / 60m / 70m / 80m
-                </li>
-            </div>
-            <div class="productos--link">
-                <a class="productos--solicitar" href=""><span class="solicitar--span">SOLICITAR</span></a>
-            </div>
-        </section>
+        </div>
     </main>
     <footer class="container-fluid">
         <div class="row footer__row">
@@ -171,8 +307,8 @@
     </footer>
     <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
         target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    <a href="./dudas.html" class="question"
-        target="_blank"> <img class="img__question" src="../imagenes/question.png" alt=""></a>
+    <a href="./nav/dudas.html" class="question" target="_blank"> <img class="img__question"
+            src="../imagenes/question.png" alt=""></a>
     <p class="footer__copy small">&copy;Roll Max 2022 | Todos los derechos reservados.</p>
     <script src="../js/bootstrap.js"></script>
 </body>

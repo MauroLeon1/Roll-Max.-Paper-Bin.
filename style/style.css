@@ -45,12 +45,6 @@
   color: rgb(245, 245, 245);
   opacity: 0.85;
 }
-@media screen and (max-width: 830px) {
-  .header__h3 {
-    font-size: 1.8em;
-    text-align: center;
-  }
-}
 .background__header {
   display: flex;
   justify-content: center;
@@ -308,131 +302,20 @@
 
 /* PRODUCTOS.HTMLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
 .main--productos {
-  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
-}
-.productos--h4 {
-  text-align: start;
-  padding-top: 3vh;
-  padding-left: 65%;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.2vw;
-}
-.productos--h4--p2 {
-  text-align: start;
-  padding-top: 3vh;
-  padding-left: 65%;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
-}
-#termicos,
-#fiscales,
-#obra,
-#etiquetas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  height: 70%;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: solid 3px rgba(120, 133, 252, 0.37);
-  grid-template-areas:
-    "img descripcion"
-    "img medidas"
-    "img link";
+  
 }
 .productos--h3 {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
   padding: 4vh;
-  color: rgb(35, 165, 217);
-}
-.productos--div {
-  grid-area: img;
-  justify-self: center;
-  align-self: center;
-  height: 90%;
-  width: auto;
-}
-.productos--descripcion__tf {
-  grid-area: descripcion;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2em;
-  place-self: center start;
-}
-.productos--medidas {
-  grid-area: medidas;
-  place-self: center start;
-  font-size: 1.2em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.productos--link {
-  grid-area: link;
-  place-self: center;
-  background-color: green;
-  border-radius: 20px;
-  text-align: center;
-}
-.productos--solicitar {
-  color: white;
-  text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.solicitar--span {
-  font-size: 1em;
-  padding: 15px 40px;
-  background-color: green;
-  border-radius: 20px;
-}
-.productos--img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 30px;
-}
+  color: rgb(35, 165, 217);}
 .productos--lis {
   padding: 2% 0;
 }
-
-/* grids guia */
-.grid-body {
-  display: grid;
-  height: 100vh;
-  width: 100%;
-  border: solid 3px red;
-  gap: 10px;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "sectiona sectionb aside"
-    "footer footer footer";
-}
-.grid-header {
-  grid-area: header;
-  background-color: aliceblue;
-}
-.grid-sectiona {
-  grid-area: sectiona;
-  background-color: blueviolet;
-}
-.grid-sectionb {
-  grid-area: sectionb;
-  background-color: chartreuse;
-}
-.grid-aside {
-  grid-area: aside;
-  background-color: yellow;
-}
-.grid-footer {
-  grid-area: footer;
-  background-color: black;
-}
+/* FORMULARIO-------------------------------------------------------------------------------------------------- */
 .input__mensaje {
   min-height: 130px;
-}
-input::placeholder {
-  
 }
 .formulario__h5 {
   text-align: center;
@@ -463,34 +346,106 @@ input::placeholder {
   display: flex;
   justify-content: space-around;
 }
-.whatsapp , .question {
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:22px;
-  right:10px;
-  background-color:#25d366;
-  color:#FFF;
-  border-radius:50px;
-  text-align:center;
-  font-size:30px;
-  z-index:100;
+/* PORDUCTOS PRUJEBA */
+.div__conteiner__img {
+  height: 400px;
+  text-align: end;
 }
-.question{
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:90px;
-  right:10px;
-  text-align:center;
-  z-index:200;
+/* dudas */
+.dudas__p {
+  margin-left: 1.5rem;
+  
+}
+.dudas__h4 {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1em 0;
+  color: rgb(35, 165, 217);
+}
+.dudas__li {
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media screen and (max-width:850px) { .dudas__div__container {
+  flex-direction: column;
+}
+}
+@media screen and (max-width:850px) { .div__conteiner__img {
+  text-align: center;
+}
+}
+.container-fluid-productos:nth-child(2){
+
+  border-bottom: solid 2px rgba(179, 179, 179, 0.3);
+  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
+}
+.container-fluid-productos:nth-child(3){background-color:rgba(35, 165, 217, 0.178);}
+.container-fluid-productos:nth-child(4){background-color:rgba(102, 102, 102, 0.082);}
+.container-fluid-productos:nth-child(5){background-color: rgba(35, 165, 217, 0.178);
+margin-bottom: 100px;}
+
+.termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+}
+.div__acordeon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.productos__termicos__h4 {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.productos__div__buttom {
+  text-align: center;
+  padding-top: 1em;
+}
+.buttom__solicitar {
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.acordeon__container {
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color:none;
+}
+.descripcion__acordeon {
+  font-size: 0.65em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*  */
+.whatsapp,
+.question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 22px;
+  right: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+.question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 10px;
+  text-align: center;
+  z-index: 200;
 }
 .img__question {
   width: 100%;
   height: 100%;
 }
 .whatsapp-icon {
-  margin-top:14px;
+  margin-top: 14px;
 }
 /* MEDIA QUERRIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES */
 @media only screen and (max-width: 550px) {
@@ -511,7 +466,7 @@ input::placeholder {
 }
 @media only screen and (max-width: 550px) {
   .productos__div__img {
-width: 90%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -595,7 +550,12 @@ width: 90%;
     font-size: 0.8em;
   }
 }
-
+@media screen and (max-width: 830px) {
+  .header__h3 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+}
 /* footer mobile */
 @media screen and (max-width: 830px) {
   .footer__h2 {
@@ -666,7 +626,8 @@ width: 90%;
   }
 }
 @media screen and (max-width: 830px) {
-  .productos--h4--p2 , .productos--h4 {
+  .productos--h4--p2,
+  .productos--h4 {
     order: -10;
     text-align: center;
     font-size: 1.5em;
