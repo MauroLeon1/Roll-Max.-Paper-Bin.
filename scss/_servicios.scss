@@ -1,0 +1,49 @@
+
+#servicios {
+  background-image: url(../imagenes/fondo-servicios.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  background-position: center;
+  h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.2em;
+    padding-bottom: 4vh;
+    color: rgb(252, 252, 252);
+    padding-top: 2.7%;
+    text-align: center;
+  }
+  .div__conteiner__logos {
+    display: flex;
+    text-align: center;
+    margin: 0 12%;
+    @media screen and (max-width: 830px) {
+      flex-direction: column;
+      margin: 0;
+    }
+    .div__img {
+      padding: 10% 0;
+      font-family: none;
+      .servicios__img {
+        width: 40%;
+        padding: 10%;
+        background-color: rgba(35, 165, 217, 0.795);
+        border-radius: 10px;
+      }
+      .servicios__h3 {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1.5em;
+        padding-top: 3vh;
+        color: rgb(252, 252, 252);
+      }
+    .servicios__p {  font-size: 1em;
+        padding-top: 3vh;
+        color: rgb(252, 252, 252);
+        margin: 0 10%;}
+    }
+  }
+}

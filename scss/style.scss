@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$negro: rgb(5, 5, 5);
+@import "header";
+@import "bienvenida";
+@import "productos";
+@import "servicios";
+@import "footer";
+// PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+.productos__h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+}
+.productos__h4 {
+  padding-bottom: 5vh;}
+
+/*SERVICIOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
+/* LA EMPRESA STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+.empresa--conteiner {
+  display: flex;
+  margin: 4% 5%;
+}
+
+.div__img__conteiner {
+  display: flex;
+  justify-content: end;
+  height: 90vh;
+}
+
+.empresa--h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10%;
+  color: rgb(35, 165, 217);
+}
+
+.empresa--h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+.empresa--conteiner__presentacion {
+  margin-right: 10%;
+}
+
+.empresa--p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10%;
+  font-size: 1.1em;
+  line-height: 30px;
+}
+
+/* Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+.div__copy {
+  background-color: #ffffff;
+}
+
+.footer__copy {
+  margin-bottom: 0;
+  color: black;
+}
+
+/* FINAL INDEX */
+/* PRODUCTOS.HTMLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
+.productos--h3 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  padding: 4vh;
+  color: rgb(35, 165, 217);
+}
+
+.productos--lis {
+  padding: 2% 0;
+}
+
+/* FORMULARIO-------------------------------------------------------------------------------------------------- */
+.input__mensaje {
+  min-height: 130px;
+}
+
+.formulario__h5 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5em;
+}
+
+.formulario__li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+}
+
+.formulario__p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.formulario__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(35, 165, 217);
+  border-radius: 5px;
+}
+
+.contacto__h3 {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dudas__div__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* PORDUCTOS PRUJEBA */
+ .div__conteiner__img {
+   height: 400px;
+   text-align: end;
+ }
+
+/* dudas */
+.dudas__p {
+  margin-left: 1.5rem;
+}
+
+.dudas__h4 {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1em 0;
+  color: rgb(35, 165, 217);
+}
+
+.dudas__li {
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  .dudas__div__container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
+  .div__conteiner__img {
+    text-align: center;
+  }
+}
+.container-fluid-productos:nth-child(2) {
+  border-bottom: solid 2px rgba(179, 179, 179, 0.3);
+  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
+}
+
+.container-fluid-productos:nth-child(3) {
+  background-color: rgba(35, 165, 217, 0.178);
+}
+
+.container-fluid-productos:nth-child(4) {
+  background-color: rgba(102, 102, 102, 0.082);
+}
+
+.container-fluid-productos:nth-child(5) {
+  background-color: rgba(35, 165, 217, 0.178);
+  margin-bottom: 100px;
+}
+
+.termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+}
+
+.div__acordeon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productos__termicos__h4 {
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.productos__div__buttom {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.buttom__solicitar {
+  font-size: 1.1em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.acordeon__container {
+  --bs-accordion-bg: none;
+  --bs-accordion-border-color: none;
+}
+
+.descripcion__acordeon {
+  font-size: 0.65em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*  */
+.whatsapp,
+.question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 22px;
+  right: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 10px;
+  text-align: center;
+  z-index: 200;
+}
+
+.img__question {
+  width: 100%;
+  height: 100%;
+}
+
+.whatsapp-icon {
+  margin-top: 14px;
+}
+
+/* MEDIA QUERRIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES */
+@media only screen and (max-width: 550px) {
+  .conteiner__nav__h1 {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav__h1 {
+    height: 6vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  #productos {
+    background-color: rgb(35, 165, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__h3 {
+    order: -10;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__img {
+    height: 65%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .section__div__p {
+    margin-bottom: 0;
+    text-align: center;
+    place-self: center;
+  }
+}
+/* MEDIA SERVICIOS */
+
+@media screen and (max-width: 830px) {
+  .div__conteiner__logos {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+/* footer mobile */
+@media screen and (max-width: 830px) {
+  .footer__h2 {
+    font-size: 1em;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__telefonos,
+  .footer__consulta,
+  .footer__redes {
+    padding: 1vh 0;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .telefonos__p {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__li {
+    width: 25px;
+    height: 30px;
+    padding: 0 1vw;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer__div__img {
+    margin-top: 3vh;
+  }
+}
+/* EMPRESA MOBILE */
+@media screen and (max-width: 830px) {
+  .div__img__conteiner {
+    display: none;
+  }
+}
+@media screen and (max-width: 830px) {
+  .empresa--conteiner {
+    margin: 2% 2% 5% 2%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .empresa--conteiner__presentacion {
+    margin: 0;
+  }
+}

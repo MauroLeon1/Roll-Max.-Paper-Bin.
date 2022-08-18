@@ -1,0 +1,82 @@
+footer {
+  .footer__row {
+    background-color: $negro;
+    div { text-align: center;
+      .footer__div__img {
+        text-align: center;
+      }
+    }
+    div {
+      h5 {
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .div__telefonos {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        li {
+          border-right: solid 1px grey;
+          padding-right: 1em;
+          opacity: 0.9;
+          a {
+            text-decoration: none;
+            font-family: "Source Sans Pro", sans-serif;
+            color: #ffffff;
+            font-size: 1em;
+            &:hover {
+              font-size: 1.04em;
+            }
+          }
+        }
+      }
+    }
+    div {
+      h5 {
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .div__redes {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        list-style: none;
+        li {
+          padding: 0 1em;
+          a {
+            img {
+              height: 30px;
+              width: 30px;
+              &:hover {
+                height: 33px;
+                width: 33px;
+              }
+            }
+          }
+        }
+      }
+    }
+    div {
+      h5 {
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .footer__div__formulario {
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        button {
+          &:hover {
+            background-color: rgb(35, 165, 217);
+            font-size: 1.03em;
+          }
+        }
+      }
+    }
+  }
+}

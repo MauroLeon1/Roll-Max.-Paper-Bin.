@@ -1,0 +1,73 @@
+.nav__ {
+  background-color: $negro;
+
+  h1 {
+    height: 7vh;
+    margin-bottom: 0;
+    padding-left: 1vw;
+
+    &:hover {
+      height: 7.3vh;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  button {
+    background-color: white;
+  }
+
+  .nav__contenedor__a {
+    justify-content: end;
+
+    li {
+      padding: 0 3px;
+
+      #navlink {
+        color: white;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 2em;
+
+        &:hover {
+          color: rgb(35, 165, 217);
+          background-color: rgba(128, 128, 128, 0.3);
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+header .background__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../imagenes/portada.png);
+  height: 90%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 4.5em;
+    padding-bottom: 5vh;
+    color: rgb(245, 245, 245);
+    opacity: 0.85;
+  }
+  @media screen and (max-width: 830px) {
+    .header__h3 {
+      font-size: 1.8em;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .conteiner__nav {
+    padding-left: 0;
+  }
+}
