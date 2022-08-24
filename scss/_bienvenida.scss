@@ -4,10 +4,8 @@
     padding: 5vh 5vw;
   }
   h2 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 2em;
+@include titulos;
     padding-bottom: 4vh;
-    color: rgb(35, 165, 217);
     text-align: center;
   }
   @media screen and (max-width: 830px) {
@@ -16,7 +14,7 @@
     }
   }
   p {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $font;
     text-align: center;
     font-size: 1.2em;
     line-height: 1.4;

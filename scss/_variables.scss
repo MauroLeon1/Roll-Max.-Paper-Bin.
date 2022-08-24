@@ -1,0 +1,69 @@
+$negro: rgb(5, 5, 5);
+$font: "Source Sans Pro", sans-serif;
+$colorblue: rgb(35, 165, 217);
+$colorwhite: rgb(245, 245, 245);
+$titulos-size: 2em;
+
+@mixin titulos {
+  font-family: $font;
+  font-size: $titulos-size;
+  color: $colorblue;
+}
+@mixin productoss {
+  div {
+    .productos__termicos__h4 {
+      text-align: center;
+      font-size: 1.8em;
+      padding-top: 30px;
+      font-family: $font;
+    }
+  }
+  .row__termicos {
+    .container__termico {
+      .div__conteiner__img {
+        height: 400px;
+        text-align: end;
+        @media screen and (max-width: 850px) {
+          text-align: center;
+        }
+      }
+    }
+    .div__acordeon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .acordeon__container {
+        --bs-accordion-bg: none;
+        --bs-accordion-border-color: none;
+        .accordion-item {
+          h2 {
+            button {
+              font-size: 0.65em;
+              font-family: $font;
+            }
+          }
+        }
+        .accordion-item {
+          h2 {
+            button {
+              font-size: 0.65em;
+              font-family: $font;
+            }
+          }
+        }
+        .accordion-item {
+          h2 {
+            button {
+              font-size: 0.65em;
+              font-family: $font;
+            }
+          }
+        }
+      }
+      .productos__div__buttom {
+        text-align: center;
+        padding-top: 1em;
+      }
+    }
+  }
+}

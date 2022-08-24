@@ -1,0 +1,57 @@
+.empresa--conteiner {
+  display: flex;
+  margin: 4% 5%;
+  div {
+    margin-right: 10%;
+    @media screen and (max-width: 830px) {
+      .empresa--conteiner__presentacion {
+        margin: 0;
+      }
+    }
+    h2 {
+      @include titulos;
+      font-size: 2em;
+      margin-bottom: 10%;
+    }
+    h3 {
+      font-family: $font;
+      font-size: 1.5em;
+      margin-bottom: 1%;
+    }
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      margin-bottom: 10%;
+      font-size: 1.1em;
+      line-height: 30px;
+    }
+    h3 {
+      font-family: $font;
+      font-size: 1.5em;
+      margin-bottom: 1%;
+    }
+    p {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      margin-bottom: 10%;
+      font-size: 1.1em;
+      line-height: 30px;
+    }
+  }
+  .div__img__conteiner {
+    display: flex;
+    justify-content: end;
+    height: 620px;
+    margin-right: 0;
+    @media screen and (max-width: 830px) {
+      .div__img__conteiner {
+        display: none;
+      }
+    }
+    img {
+      width: auto;
+      height: 100%;
+      @media screen and (max-width: 920px) {
+        display: none;
+      }
+    }
+  }
+}

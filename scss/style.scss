@@ -3,79 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-$negro: rgb(5, 5, 5);
+//INDEX
+@import "variables";
 @import "header";
 @import "bienvenida";
 @import "productos";
 @import "servicios";
 @import "footer";
-// PRODUCTOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-
-.productos__h3 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2em;
-}
-.productos__h4 {
-  padding-bottom: 5vh;}
-
-/*SERVICIOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
-
-/* LA EMPRESA STYLEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-.empresa--conteiner {
-  display: flex;
-  margin: 4% 5%;
-}
-
-.div__img__conteiner {
-  display: flex;
-  justify-content: end;
-  height: 90vh;
-}
-
-.empresa--h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.5em;
-  margin-bottom: 10%;
-  color: rgb(35, 165, 217);
-}
-
-.empresa--h3 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
-  margin-bottom: 1%;
-}
-
-.empresa--conteiner__presentacion {
-  margin-right: 10%;
-}
-
-.empresa--p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  margin-bottom: 10%;
-  font-size: 1.1em;
-  line-height: 30px;
-}
-
+// PRODUCTOS
+@import "htmlproductos";
+//LA EMPRESA
+@import "empresa";
 /* Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-.div__copy {
-  background-color: #ffffff;
-}
-
 .footer__copy {
   margin-bottom: 0;
   color: black;
 }
 
-/* FINAL INDEX */
-/* PRODUCTOS.HTMLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL*/
-.productos--h3 {
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2em;
-  padding: 4vh;
-  color: rgb(35, 165, 217);
-}
-
+// PRODUCTOS HTML
 .productos--lis {
   padding: 2% 0;
 }
@@ -87,17 +32,23 @@ $negro: rgb(5, 5, 5);
 
 .formulario__h5 {
   text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font;
   font-size: 1.5em;
 }
 
 .formulario__li {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font;
   font-size: 1em;
 }
 
 .formulario__p {
-  font-family: "Source Sans Pro", sans-serif;
+  @extend .formulario__li;
+  background-color: pink;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
+}
+.formulario__p_ {
+  @extend .formulario__li;
 }
 
 .formulario__div {
@@ -110,7 +61,7 @@ $negro: rgb(5, 5, 5);
 
 .contacto__h3 {
   font-size: 1.5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font;
   text-align: center;
   margin-top: 30px;
 }
@@ -119,13 +70,6 @@ $negro: rgb(5, 5, 5);
   display: flex;
   justify-content: space-around;
 }
-
-/* PORDUCTOS PRUJEBA */
- .div__conteiner__img {
-   height: 400px;
-   text-align: end;
- }
-
 /* dudas */
 .dudas__p {
   margin-left: 1.5rem;
@@ -133,14 +77,14 @@ $negro: rgb(5, 5, 5);
 
 .dudas__h4 {
   font-size: 1.5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font;
   margin: 1em 0;
   color: rgb(35, 165, 217);
 }
 
 .dudas__li {
   font-size: 1.1em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $font;
 }
 
 @media screen and (max-width: 850px) {
@@ -148,68 +92,11 @@ $negro: rgb(5, 5, 5);
     flex-direction: column;
   }
 }
-@media screen and (max-width: 850px) {
-  .div__conteiner__img {
-    text-align: center;
-  }
-}
-.container-fluid-productos:nth-child(2) {
-  border-bottom: solid 2px rgba(179, 179, 179, 0.3);
-  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
-}
-
-.container-fluid-productos:nth-child(3) {
-  background-color: rgba(35, 165, 217, 0.178);
-}
-
-.container-fluid-productos:nth-child(4) {
-  background-color: rgba(102, 102, 102, 0.082);
-}
-
-.container-fluid-productos:nth-child(5) {
-  background-color: rgba(35, 165, 217, 0.178);
-  margin-bottom: 100px;
-}
-
 .termicos--img {
   height: 100%;
   width: auto;
   border-radius: 20px;
 }
-
-.div__acordeon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.productos__termicos__h4 {
-  text-align: center;
-  font-size: 1.8em;
-  padding-top: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.productos__div__buttom {
-  text-align: center;
-  padding-top: 1em;
-}
-
-.buttom__solicitar {
-  font-size: 1.1em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.acordeon__container {
-  --bs-accordion-bg: none;
-  --bs-accordion-border-color: none;
-}
-
-.descripcion__acordeon {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
 /*  */
 .whatsapp,
 .question {
@@ -329,21 +216,5 @@ $negro: rgb(5, 5, 5);
 @media screen and (max-width: 830px) {
   .footer__div__img {
     margin-top: 3vh;
-  }
-}
-/* EMPRESA MOBILE */
-@media screen and (max-width: 830px) {
-  .div__img__conteiner {
-    display: none;
-  }
-}
-@media screen and (max-width: 830px) {
-  .empresa--conteiner {
-    margin: 2% 2% 5% 2%;
-  }
-}
-@media screen and (max-width: 830px) {
-  .empresa--conteiner__presentacion {
-    margin: 0;
   }
 }
