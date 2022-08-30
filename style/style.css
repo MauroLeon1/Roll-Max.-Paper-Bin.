@@ -13,7 +13,7 @@
   padding-left: 1vw;
 }
 .nav__ h1:hover {
-  height: 7.3vh;
+  transform: scale(1.03, 1.03);
 }
 .nav__ h1 img {
   width: 100%;
@@ -35,8 +35,6 @@
 }
 .nav__ .nav__contenedor__a li #navlink:hover {
   color: rgb(35, 165, 217);
-  background-color: rgba(128, 128, 128, 0.3);
-  border-radius: 10px;
 }
 
 header .background__header {
@@ -279,19 +277,32 @@ footer .footer__row div .div__telefonos {
   justify-content: center;
   list-style: none;
 }
-footer .footer__row div .div__telefonos li {
+footer .footer__row div .div__telefonos .telefonos__div__li {
   border-right: solid 1px grey;
   padding-right: 1em;
   opacity: 0.9;
 }
-footer .footer__row div .div__telefonos li a {
+footer .footer__row div .div__telefonos .telefonos__div__li a {
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
   font-size: 1em;
 }
-footer .footer__row div .div__telefonos li a:hover {
-  font-size: 1.04em;
+footer .footer__row div .div__telefonos .telefonos__div__li a:hover {
+  color: rgb(35, 165, 217);
+}
+footer .footer__row div .div__telefonos .telefonos__div--li {
+  padding-left: 1em;
+  opacity: 0.9;
+}
+footer .footer__row div .div__telefonos .telefonos__div--li a {
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+}
+footer .footer__row div .div__telefonos .telefonos__div--li a:hover {
+  color: rgb(35, 165, 217);
 }
 footer .footer__row div h5 {
   text-align: center;
@@ -313,8 +324,7 @@ footer .footer__row div .div__redes li a img {
   width: 30px;
 }
 footer .footer__row div .div__redes li a img:hover {
-  height: 33px;
-  width: 33px;
+  transform: scale(1.1, 1.1);
 }
 footer .footer__row div h5 {
   text-align: center;
@@ -328,7 +338,43 @@ footer .footer__row div .footer__div__formulario {
 }
 footer .footer__row div .footer__div__formulario button:hover {
   background-color: rgb(35, 165, 217);
-  font-size: 1.03em;
+  transform: scale(1.01, 1.01);
+}
+
+.footer__copy {
+  margin-bottom: 0;
+  color: black;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 22px;
+  right: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+.whatsapp .whatsapp-icon {
+  margin-top: 14px;
+}
+
+.question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 10px;
+  text-align: center;
+  z-index: 200;
+}
+.question .img__question {
+  width: 100%;
+  height: 100%;
 }
 
 .main--productos .productos--h3 {
@@ -357,6 +403,11 @@ footer .footer__row div .footer__div__formulario button:hover {
     text-align: center;
   }
 }
+.main--productos .container-fluid-productos:nth-child(2) .row__termicos .container__termico .div__conteiner__img .termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+}
 .main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon {
   display: flex;
   flex-direction: column;
@@ -381,6 +432,7 @@ footer .footer__row div .footer__div__formulario button:hover {
 .main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .productos__div__buttom {
   text-align: center;
   padding-top: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .main--productos .container-fluid-productos:nth-child(3) {
   background-color: rgba(35, 165, 217, 0.178);
@@ -399,6 +451,11 @@ footer .footer__row div .footer__div__formulario button:hover {
   .main--productos .container-fluid-productos:nth-child(3) .row__termicos .container__termico .div__conteiner__img {
     text-align: center;
   }
+}
+.main--productos .container-fluid-productos:nth-child(3) .row__termicos .container__termico .div__conteiner__img .termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
 }
 .main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon {
   display: flex;
@@ -424,6 +481,7 @@ footer .footer__row div .footer__div__formulario button:hover {
 .main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .productos__div__buttom {
   text-align: center;
   padding-top: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .main--productos .container-fluid-productos:nth-child(4) {
   background-color: rgba(102, 102, 102, 0.082);
@@ -442,6 +500,11 @@ footer .footer__row div .footer__div__formulario button:hover {
   .main--productos .container-fluid-productos:nth-child(4) .row__termicos .container__termico .div__conteiner__img {
     text-align: center;
   }
+}
+.main--productos .container-fluid-productos:nth-child(4) .row__termicos .container__termico .div__conteiner__img .termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
 }
 .main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon {
   display: flex;
@@ -467,6 +530,7 @@ footer .footer__row div .footer__div__formulario button:hover {
 .main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .productos__div__buttom {
   text-align: center;
   padding-top: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .main--productos .container-fluid-productos:nth-child(5) {
   background-color: rgba(35, 165, 217, 0.178);
@@ -486,6 +550,11 @@ footer .footer__row div .footer__div__formulario button:hover {
   .main--productos .container-fluid-productos:nth-child(5) .row__termicos .container__termico .div__conteiner__img {
     text-align: center;
   }
+}
+.main--productos .container-fluid-productos:nth-child(5) .row__termicos .container__termico .div__conteiner__img .termicos--img {
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
 }
 .main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon {
   display: flex;
@@ -511,6 +580,7 @@ footer .footer__row div .footer__div__formulario button:hover {
 .main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .productos__div__buttom {
   text-align: center;
   padding-top: 1em;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .empresa--conteiner {
@@ -575,44 +645,39 @@ footer .footer__row div .footer__div__formulario button:hover {
   }
 }
 
-/* Footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-.footer__copy {
-  margin-bottom: 0;
-  color: black;
-}
-
-.productos--lis {
-  padding: 2% 0;
-}
-
-/* FORMULARIO-------------------------------------------------------------------------------------------------- */
-.input__mensaje {
-  min-height: 130px;
-}
-
-.formulario__h5 {
-  text-align: center;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5em;
-}
-
-.formulario__li, .formulario__p_, .formulario__p {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1em;
-}
-
-.formulario__p {
-  background-color: pink;
-  margin-left: -0.5em;
-  margin-right: -0.5em;
-}
-
-.formulario__div {
+.dudas__div__container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(35, 165, 217);
-  border-radius: 5px;
+  justify-content: space-around;
+}
+@media screen and (max-width: 780px) {
+  .dudas__div__container {
+    flex-direction: column;
+  }
+}
+.dudas__div__container div {
+  width: 50%;
+}
+@media screen and (max-width: 781px) {
+  .dudas__div__container div {
+    text-align: start;
+    width: 100%;
+  }
+}
+.dudas__div__container div h4 {
+  font-size: 1.6em;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 1em 0;
+  color: rgb(35, 165, 217);
+}
+.dudas__div__container div li {
+  font-size: 1.2em;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-bottom: 1rem;
+}
+.dudas__div__container div p {
+  margin-left: 1.5rem;
+  font-size: 1em;
+  padding-bottom: 1rem;
 }
 
 .contacto__h3 {
@@ -622,94 +687,32 @@ footer .footer__row div .footer__div__formulario button:hover {
   margin-top: 30px;
 }
 
-.dudas__div__container {
+.input__mensaje {
+  min-height: 130px;
+}
+
+.formulario__div {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(35, 165, 217);
+  border-radius: 5px;
 }
-
-/* dudas */
-.dudas__p {
-  margin-left: 1.5rem;
-}
-
-.dudas__h4 {
+.formulario__div h5 {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
+}
+.formulario__div .formulario__li, .formulario__div .formulario__p_, .formulario__div .formulario__p {
   font-family: "Source Sans Pro", sans-serif;
-  margin: 1em 0;
-  color: rgb(35, 165, 217);
+  font-size: 1em;
 }
-
-.dudas__li {
-  font-size: 1.1em;
-  font-family: "Source Sans Pro", sans-serif;
+.formulario__div .formulario__p {
+  background-color: pink;
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
-
-@media screen and (max-width: 850px) {
-  .dudas__div__container {
-    flex-direction: column;
-  }
-}
-.termicos--img {
-  height: 100%;
-  width: auto;
-  border-radius: 20px;
-}
-
-/*  */
-.whatsapp,
-.question {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 22px;
-  right: 10px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-}
-
-.question {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 90px;
-  right: 10px;
-  text-align: center;
-  z-index: 200;
-}
-
-.img__question {
-  width: 100%;
-  height: 100%;
-}
-
-.whatsapp-icon {
-  margin-top: 14px;
-}
-
 /* MEDIA QUERRIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEES */
-@media only screen and (max-width: 550px) {
-  .conteiner__nav__h1 {
-    padding-left: 0;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .nav__h1 {
-    height: 6vh;
-  }
-}
-@media screen and (max-width: 830px) {
-  #productos {
-    background-color: rgb(35, 165, 217);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 5vh;
-  }
-}
 @media screen and (max-width: 830px) {
   .section__div__h3 {
     order: -10;
@@ -733,45 +736,5 @@ footer .footer__row div .footer__div__formulario button:hover {
   .div__conteiner__logos {
     flex-direction: column;
     margin: 0;
-  }
-}
-/* footer mobile */
-@media screen and (max-width: 830px) {
-  .footer__h2 {
-    font-size: 1em;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 830px) {
-  .footer__telefonos,
-.footer__consulta,
-.footer__redes {
-    padding: 1vh 0;
-  }
-}
-@media screen and (max-width: 830px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 830px) {
-  .telefonos__p {
-    text-align: center;
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 830px) {
-  .footer__li {
-    width: 25px;
-    height: 30px;
-    padding: 0 1vw;
-  }
-}
-@media screen and (max-width: 830px) {
-  .footer__div__img {
-    margin-top: 3vh;
   }
 }

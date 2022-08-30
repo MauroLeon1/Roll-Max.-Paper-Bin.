@@ -1,0 +1,34 @@
+.contacto__h3 {
+  font-size: 1.5em;
+  font-family: $font;
+  text-align: center;
+  margin-top: 30px;
+}
+.input__mensaje {
+  min-height: 130px;
+}
+.formulario__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(35, 165, 217);
+  border-radius: 5px;
+  h5 {
+    text-align: center;
+    font-family: $font;
+    font-size: 1.5em;
+  }
+  .formulario__li {
+    font-family: $font;
+    font-size: 1em;
+  }
+  .formulario__p {
+    @extend .formulario__li;
+    background-color: pink;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+  }
+  .formulario__p_ {
+    @extend .formulario__li;
+  }
+}

@@ -26,6 +26,11 @@ $titulos-size: 2em;
         @media screen and (max-width: 850px) {
           text-align: center;
         }
+        .termicos--img {
+          height: 100%;
+          width: auto;
+          border-radius: 20px;
+        }
       }
     }
     .div__acordeon {
@@ -63,6 +68,7 @@ $titulos-size: 2em;
       .productos__div__buttom {
         text-align: center;
         padding-top: 1em;
+        font-family: $font;
       }
     }
   }
