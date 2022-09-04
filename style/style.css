@@ -8,12 +8,12 @@
   background-color: rgb(5, 5, 5);
 }
 .nav__ h1 {
-  height: 7vh;
+  height: 1.27em;
   margin-bottom: 0;
   padding-left: 1vw;
 }
 .nav__ h1:hover {
-  transform: scale(1.03, 1.03);
+  opacity: 0.81;
 }
 .nav__ h1 img {
   width: 100%;
@@ -210,10 +210,14 @@ header .background__header h3 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  height: 650px;
   margin-bottom: 100px;
   background-position: center;
+}
+@media screen and (max-width: 830px) {
+  #servicios {
+    height: auto;
+  }
 }
 #servicios h2 {
   font-family: "Source Sans Pro", sans-serif;
@@ -225,8 +229,8 @@ header .background__header h3 {
 }
 #servicios .div__conteiner__logos {
   display: flex;
-  text-align: center;
-  margin: 0 12%;
+  justify-content: center;
+  margin-top: 7%;
 }
 @media screen and (max-width: 830px) {
   #servicios .div__conteiner__logos {
@@ -235,26 +239,33 @@ header .background__header h3 {
   }
 }
 #servicios .div__conteiner__logos .div__img {
-  padding: 10% 0;
   font-family: none;
+  width: 400px;
+  text-align: center;
+}
+@media screen and (max-width: 830px) {
+  #servicios .div__conteiner__logos .div__img {
+    margin: 20px auto;
+  }
 }
 #servicios .div__conteiner__logos .div__img .servicios__img {
-  width: 40%;
-  padding: 10%;
+  width: 160px;
+  padding: 40px;
   background-color: rgba(35, 165, 217, 0.795);
   border-radius: 10px;
+  text-align: center;
 }
 #servicios .div__conteiner__logos .div__img .servicios__h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5em;
-  padding-top: 3vh;
+  padding-top: 1rem;
   color: rgb(252, 252, 252);
+  text-align: center;
 }
 #servicios .div__conteiner__logos .div__img .servicios__p {
   font-size: 1em;
-  padding-top: 3vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(252, 252, 252);
-  margin: 0 10%;
 }
 
 footer .footer__row {
@@ -377,209 +388,68 @@ footer .footer__row div .footer__div__formulario button:hover {
   height: 100%;
 }
 
-.main--productos .productos--h3 {
-  text-align: center;
+.main__productos {
+  width: 95%;
+  margin: 10 auto;
+}
+.main__productos .productos__h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2em;
-  padding: 4vh;
   color: rgb(35, 165, 217);
-}
-.main--productos .container-fluid-productos:nth-child(2) {
-  border-bottom: solid 2px rgba(179, 179, 179, 0.3);
-  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
-}
-.main--productos .container-fluid-productos:nth-child(2) div .productos__termicos__h4 {
   text-align: center;
-  font-size: 1.8em;
-  padding-top: 30px;
-  font-family: "Source Sans Pro", sans-serif;
+  margin: 2.5rem 0;
 }
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .container__termico .div__conteiner__img {
-  height: 400px;
-  text-align: end;
-}
-@media screen and (max-width: 850px) {
-  .main--productos .container-fluid-productos:nth-child(2) .row__termicos .container__termico .div__conteiner__img {
-    text-align: center;
-  }
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .container__termico .div__conteiner__img .termicos--img {
-  height: 100%;
-  width: auto;
-  border-radius: 20px;
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon {
+.main__productos #productos {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .acordeon__container {
-  --bs-accordion-bg: none;
-  --bs-accordion-border-color: none;
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(2) .row__termicos .div__acordeon .productos__div__buttom {
-  text-align: center;
-  padding-top: 1em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(3) {
-  background-color: rgba(35, 165, 217, 0.178);
-}
-.main--productos .container-fluid-productos:nth-child(3) div .productos__termicos__h4 {
-  text-align: center;
-  font-size: 1.8em;
-  padding-top: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .container__termico .div__conteiner__img {
-  height: 400px;
-  text-align: end;
-}
-@media screen and (max-width: 850px) {
-  .main--productos .container-fluid-productos:nth-child(3) .row__termicos .container__termico .div__conteiner__img {
-    text-align: center;
+@media screen and (max-width: 1434.44px) {
+  .main__productos #productos {
+    justify-content: start;
   }
 }
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .container__termico .div__conteiner__img .termicos--img {
-  height: 100%;
-  width: auto;
-  border-radius: 20px;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .acordeon__container {
-  --bs-accordion-bg: none;
-  --bs-accordion-border-color: none;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(3) .row__termicos .div__acordeon .productos__div__buttom {
-  text-align: center;
-  padding-top: 1em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(4) {
-  background-color: rgba(102, 102, 102, 0.082);
-}
-.main--productos .container-fluid-productos:nth-child(4) div .productos__termicos__h4 {
-  text-align: center;
-  font-size: 1.8em;
-  padding-top: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .container__termico .div__conteiner__img {
-  height: 400px;
-  text-align: end;
-}
-@media screen and (max-width: 850px) {
-  .main--productos .container-fluid-productos:nth-child(4) .row__termicos .container__termico .div__conteiner__img {
-    text-align: center;
+@media screen and (max-width: 1062px) {
+  .main__productos #productos {
+    justify-content: space-evenly;
   }
 }
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .container__termico .div__conteiner__img .termicos--img {
-  height: 100%;
+.main__productos #productos div {
+  width: 18rem;
+  background-color: rgb(35, 165, 217);
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  border: 10px solid rgba(0, 0, 0, 0.111);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+}
+.main__productos #productos div:hover {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+}
+.main__productos #productos div img {
+  border-radius: 5px;
+}
+.main__productos #productos div .card-body {
   width: auto;
-  border-radius: 20px;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .acordeon__container {
-  --bs-accordion-bg: none;
-  --bs-accordion-border-color: none;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(4) .row__termicos .div__acordeon .productos__div__buttom {
   text-align: center;
-  padding-top: 1em;
+  border: none;
+  box-shadow: none;
+}
+.main__productos #productos div .card-body h5 {
+  color: rgb(245, 245, 245);
   font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 20px;
 }
-.main--productos .container-fluid-productos:nth-child(5) {
-  background-color: rgba(35, 165, 217, 0.178);
-  margin-bottom: 100px;
+.main__productos #productos div .card-body div {
+  border: none;
+  margin: 0 -22%;
+  width: 144%;
+  box-shadow: none;
+  padding-top: 0;
 }
-.main--productos .container-fluid-productos:nth-child(5) div .productos__termicos__h4 {
-  text-align: center;
-  font-size: 1.8em;
-  padding-top: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .container__termico .div__conteiner__img {
-  height: 400px;
-  text-align: end;
-}
-@media screen and (max-width: 850px) {
-  .main--productos .container-fluid-productos:nth-child(5) .row__termicos .container__termico .div__conteiner__img {
-    text-align: center;
-  }
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .container__termico .div__conteiner__img .termicos--img {
-  height: 100%;
-  width: auto;
-  border-radius: 20px;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .acordeon__container {
-  --bs-accordion-bg: none;
-  --bs-accordion-border-color: none;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .acordeon__container .accordion-item h2 button {
-  font-size: 0.65em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.main--productos .container-fluid-productos:nth-child(5) .row__termicos .div__acordeon .productos__div__buttom {
-  text-align: center;
-  padding-top: 1em;
+.main__productos #productos div .card-body div a {
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -729,12 +599,5 @@ footer .footer__row div .footer__div__formulario button:hover {
     margin-bottom: 0;
     text-align: center;
     place-self: center;
-  }
-}
-/* MEDIA SERVICIOS */
-@media screen and (max-width: 830px) {
-  .div__conteiner__logos {
-    flex-direction: column;
-    margin: 0;
   }
 }

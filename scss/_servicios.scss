@@ -1,14 +1,15 @@
-
 #servicios {
   background-image: url(../imagenes/fondo-servicios.png);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  height: 650px;
   margin-bottom: 100px;
   background-position: center;
+  @media screen and (max-width: 830px) {
+    height: auto;
+  }
   h2 {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 2.2em;
@@ -19,31 +20,40 @@
   }
   .div__conteiner__logos {
     display: flex;
-    text-align: center;
-    margin: 0 12%;
+    justify-content: center;
+    margin-top: 7%;
     @media screen and (max-width: 830px) {
       flex-direction: column;
       margin: 0;
     }
     .div__img {
-      padding: 10% 0;
       font-family: none;
+      width: 400px;
+      text-align: center;
+
+      @media screen and (max-width: 830px) {
+        margin: 20px auto;
+      }
       .servicios__img {
-        width: 40%;
-        padding: 10%;
+        width: 160px;
+        padding: 40px;
         background-color: rgba(35, 165, 217, 0.795);
         border-radius: 10px;
+        text-align: center;
       }
       .servicios__h3 {
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: $font;
         font-size: 1.5em;
-        padding-top: 3vh;
+        padding-top: 1rem;
+        color: rgb(252, 252, 252);
+        text-align: center;
+      }
+      .servicios__p {
+        font-size: 1em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         color: rgb(252, 252, 252);
       }
-    .servicios__p {  font-size: 1em;
-        padding-top: 3vh;
-        color: rgb(252, 252, 252);
-        margin: 0 10%;}
     }
   }
 }
+

@@ -2,12 +2,12 @@
   background-color: $negro;
 
   h1 {
-    height: 7vh;
+    height: 1.27em;
     margin-bottom: 0;
     padding-left: 1vw;
 
     &:hover {
-      transform: scale(1.03,1.03);
+      opacity: 0.81;
     }
 
     img {

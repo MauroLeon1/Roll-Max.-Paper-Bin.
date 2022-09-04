@@ -1,27 +1,59 @@
-.main--productos {
-  .productos--h3 {
+.main__productos {
+  width: 95%;
+  margin: 10 auto;
+  .productos__h3 {
+    @include titulos;
     text-align: center;
-    font-family: $font;
-    font-size: 2em;
-    padding: 4vh;
-    color: rgb(35, 165, 217);
+    margin: 2.5rem 0;
   }
-  .container-fluid-productos:nth-child(2) {
-    border-bottom: solid 2px rgba(179, 179, 179, 0.3);
-    background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
-    @include productoss;
-  }
-  .container-fluid-productos:nth-child(3) {
-    background-color: rgba(35, 165, 217, 0.178);
-    @include productoss;
-  }
-  .container-fluid-productos:nth-child(4) {
-    background-color: rgba(102, 102, 102, 0.082);
-    @include productoss;
-  }
-  .container-fluid-productos:nth-child(5) {
-    background-color: rgba(35, 165, 217, 0.178);
-    margin-bottom: 100px;
-    @include productoss;
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 1434.44px) {
+      justify-content: start;
+    }
+    @media screen and (max-width: 1062px) {
+      justify-content: space-evenly;
+    }
+    div {
+      // margin: 0 auto;
+      width: 18rem;
+      background-color: $colorblue;
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+      border: 10px solid rgba(0, 0, 0, 0.111);
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+      -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+      -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+      &:hover {
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.35);
+      }
+      img {
+        border-radius: 5px;
+      }
+      .card-body {
+        width: auto;
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        h5 {
+          color: $colorwhite;
+          font-family: $font;
+          margin-bottom: 20px;
+        }
+        div {
+          border: none;
+          margin: 0 -22%;
+          width: 144%;
+         box-shadow: none;
+         padding-top: 0;
+          a {
+            font-family: $font;
+          }
+        }
+      }
+    }
   }
 }
