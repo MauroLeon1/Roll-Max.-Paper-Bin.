@@ -10,15 +10,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media screen and (max-width: 1434.44px) {
+    @media screen and (max-width: 1297px) {
       justify-content: start;
     }
-    @media screen and (max-width: 1062px) {
+    @media screen and (max-width: 639px) {
       justify-content: space-evenly;
     }
     div {
       // margin: 0 auto;
-      width: 18rem;
+      width: 16rem;
       background-color: $colorblue;
       padding: 1.5rem 1.5rem 0.5rem 1.5rem;
       border: 10px solid rgba(0, 0, 0, 0.111);
@@ -45,10 +45,10 @@
         }
         div {
           border: none;
-          margin: 0 -22%;
-          width: 144%;
+          margin: 0 -3rem;
+          width: 167%;
          box-shadow: none;
-         padding-top: 0;
+         padding: 0;
           a {
             font-family: $font;
           }

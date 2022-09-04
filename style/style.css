@@ -404,18 +404,18 @@ footer .footer__row div .footer__div__formulario button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media screen and (max-width: 1434.44px) {
+@media screen and (max-width: 1297px) {
   .main__productos #productos {
     justify-content: start;
   }
 }
-@media screen and (max-width: 1062px) {
+@media screen and (max-width: 639px) {
   .main__productos #productos {
     justify-content: space-evenly;
   }
 }
 .main__productos #productos div {
-  width: 18rem;
+  width: 16rem;
   background-color: rgb(35, 165, 217);
   padding: 1.5rem 1.5rem 0.5rem 1.5rem;
   border: 10px solid rgba(0, 0, 0, 0.111);
@@ -444,10 +444,10 @@ footer .footer__row div .footer__div__formulario button:hover {
 }
 .main__productos #productos div .card-body div {
   border: none;
-  margin: 0 -22%;
-  width: 144%;
+  margin: 0 -3rem;
+  width: 167%;
   box-shadow: none;
-  padding-top: 0;
+  padding: 0;
 }
 .main__productos #productos div .card-body div a {
   font-family: "Source Sans Pro", sans-serif;
