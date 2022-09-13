@@ -28,11 +28,12 @@
     }
     .div__img {
       font-family: none;
-      width: 400px;
+      width: 29%;
       text-align: center;
 
       @media screen and (max-width: 830px) {
         margin: 20px auto;
+        width: 80%;
       }
       .servicios__img {
         width: 160px;

@@ -244,12 +244,13 @@ header .background__header h3 {
 }
 #servicios .div__conteiner__logos .div__img {
   font-family: none;
-  width: 400px;
+  width: 29%;
   text-align: center;
 }
 @media screen and (max-width: 830px) {
   #servicios .div__conteiner__logos .div__img {
     margin: 20px auto;
+    width: 80%;
   }
 }
 #servicios .div__conteiner__logos .div__img .servicios__img {
