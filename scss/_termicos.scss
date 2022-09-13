@@ -1,0 +1,66 @@
+.main__termicos {
+  margin: 3rem 0;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
+  h3 {
+    @include titulos;
+    text-align: center;
+  }
+  div {
+    margin: 2rem 0;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+    div {
+      div {
+        width: 18rem;
+        margin: 0 auto;
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+    div {
+      .termicos__descripcion {
+        margin: 0;
+        width: auto;
+      }
+    }
+  }
+  div {
+    .video_descripcion {
+      @media screen and (max-width: 768px) {
+        order: 10;
+      }
+      .descripcion__video {
+        width: 90%;
+        margin: 0;
+        h4 {
+          text-align: start;
+        }
+      }
+    }
+    .video_medidas {
+      @media screen and (max-width: 768px) {
+        order: -10;
+      }
+      .div__video {
+        width: 90%;
+
+        iframe {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .termicos__solicitar {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 5rem 0 1rem 0;
+    font-family: $font;
+  }
+}

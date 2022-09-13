@@ -144,13 +144,17 @@ header .background__header h3 {
 .carrusel__contenedor .container__productos .productos__row {
   background-color: rgb(35, 165, 217);
   border-radius: 30px;
+  width: 90%;
+  margin: 0 auto;
 }
 .carrusel__contenedor .container__productos .productos__row .productos__index__div__img {
-  height: 400px;
+  height: auto;
+  width: 100%;
   text-align: end;
 }
 .carrusel__contenedor .container__productos .productos__row .productos__index__div__img .productos__div__img {
-  height: 100%;
+  height: auto;
+  width: 100%;
   border-radius: 10px;
 }
 @media only screen and (max-width: 550px) {
@@ -174,7 +178,7 @@ header .background__header h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.1em;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .carrusel__contenedor .container__productos .productos__row .div__descripcion .productos__div__medidas {
     display: none;
   }
@@ -293,27 +297,23 @@ footer .footer__row div .div__telefonos .telefonos__div__li {
   padding-right: 1em;
   opacity: 0.9;
 }
-footer .footer__row div .div__telefonos .telefonos__div__li a {
+footer .footer__row div .div__telefonos .telefonos__div__li p {
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
   font-size: 1em;
-}
-footer .footer__row div .div__telefonos .telefonos__div__li a:hover {
-  color: rgb(35, 165, 217);
+  margin-bottom: 0;
 }
 footer .footer__row div .div__telefonos .telefonos__div--li {
   padding-left: 1em;
   opacity: 0.9;
 }
-footer .footer__row div .div__telefonos .telefonos__div--li a {
+footer .footer__row div .div__telefonos .telefonos__div--li p {
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
   font-size: 1em;
-}
-footer .footer__row div .div__telefonos .telefonos__div--li a:hover {
-  color: rgb(35, 165, 217);
+  margin-bottom: 0;
 }
 footer .footer__row div h5 {
   text-align: center;
@@ -361,8 +361,8 @@ footer .footer__row div .footer__div__formulario button:hover {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 22px;
-  right: 10px;
+  bottom: 30px;
+  right: 20px;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
@@ -371,21 +371,7 @@ footer .footer__row div .footer__div__formulario button:hover {
   z-index: 100;
 }
 .whatsapp .whatsapp-icon {
-  margin-top: 14px;
-}
-
-.question {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 90px;
-  right: 10px;
-  text-align: center;
-  z-index: 200;
-}
-.question .img__question {
-  width: 100%;
-  height: 100%;
+  margin-top: 13px;
 }
 
 .main__productos {
@@ -450,6 +436,71 @@ footer .footer__row div .footer__div__formulario button:hover {
   padding: 0;
 }
 .main__productos #productos div .card-body div a {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 45%;
+}
+
+.main__termicos {
+  margin: 3rem 0;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom, #ffffff, #e7f3ff);
+}
+.main__termicos h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  color: rgb(35, 165, 217);
+  text-align: center;
+}
+.main__termicos div {
+  margin: 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  .main__termicos div {
+    margin: 0;
+  }
+}
+.main__termicos div div div {
+  width: 18rem;
+  margin: 0 auto;
+}
+.main__termicos div div div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.main__termicos div div .termicos__descripcion {
+  margin: 0;
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .main__termicos div .video_descripcion {
+    order: 10;
+  }
+}
+.main__termicos div .video_descripcion .descripcion__video {
+  width: 90%;
+  margin: 0;
+}
+.main__termicos div .video_descripcion .descripcion__video h4 {
+  text-align: start;
+}
+@media screen and (max-width: 768px) {
+  .main__termicos div .video_medidas {
+    order: -10;
+  }
+}
+.main__termicos div .video_medidas .div__video {
+  width: 90%;
+}
+.main__termicos div .video_medidas .div__video iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+.main__termicos .termicos__solicitar {
+  text-align: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 5rem 0 1rem 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 

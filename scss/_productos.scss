@@ -19,11 +19,15 @@
     .productos__row {
       background-color: rgb(35, 165, 217);
       border-radius: 30px;
+      width: 90%;
+      margin: 0 auto;
       .productos__index__div__img {
-        height: 400px;
+        height: auto;
+        width: 100%;
         text-align: end;
         .productos__div__img {
-          height: 100%;
+          height: auto;
+          width: 100%;
           border-radius: 10px;
         }
 
@@ -48,7 +52,7 @@
           font-family: "Source Sans Pro", sans-serif;
           font-size: 1.1em;
         }
-        @media only screen and (max-width: 850px) {
+        @media only screen and (max-width: 1000px) {
             .productos__div__medidas {
               display: none;
             }
